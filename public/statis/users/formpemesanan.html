@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <title>Homepage</title>
+</head>
+
+<body>
+    <div class="atas navbar-formpemesanan">
+      <section class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img class="logo" src="img/logo.png" alt="" srcset="" width="200px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">BERANDA</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    MENU
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="detailmenu.html">Menu Diet Sehat</a></li>
+                    <li><a class="dropdown-item" href="menuprasmanan.html">Menu Prasmanan</a></li>
+                   
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="carapesan.html">CARA PESAN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kontakkami.html">KONTAK KAMI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formkonsultasi.html">KONSULTASI</a>
+                  </li>
+  
+                
+                <li class="nav-item d-grid gap-2">
+                  <button class="btn btn-primary btn-login d-lg-none d-xxl-none
+            " type="button"><a href="login.html">LOGIN</a></button>
+                </li>     
+              </ul>
+            </div>
+            <div class="login-hitam d-none d-lg-block" >
+            <a class="navbar-brand login-hitam" href="login.html">
+              <img src="img/loginhitam.svg" alt="iconlogin" srcset="" width="35px">
+            </a>
+          </div>
+          </div>
+        </nav>
+        </section>
+  
+        
+
+        <div class="formpemesanan">
+          <div class="container">
+              <form class="wrap needs-validation" novalidate>
+              <div class="content" > 
+                      
+                  <h1 class="judulformpemesanan">Isi Form Pemesanan</h1>
+                  <p class="juduldeksripsi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, saepe nemo. Voluptate, unde. Id accusantium assumenda quisquam consectetur, ad fugiat molestias, esse laborum hic quas dolorem iusto consequuntur temporibus. Velit.</p>
+                  <div class=" form-group mt-8 mb-4">
+                      <label for="iinputnama" class="form-label">Nama</label>
+                      <input type="text" class="form-control" id="iinputnama" placeholder="Masukan Nama" required>
+                      <div class="invalid-feedback">
+                        Harap Isi Nama Dengan Benar
+                      </div>
+                    </div>
+
+                    <div class="form-group mb-4">
+                      <label for="inputemail" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputemail" placeholder="Masukan Email" required>
+                      <div class="invalid-feedback">
+                        Harap Isi Email Dengan Benar
+                      </div>
+                    
+                    </div>
+                    <div class="form-group mb-4">
+                      <label for="inputwa" class="form-label">No. Whatapps</label>
+                      <input type="number" class="form-control no-arrows" id="inputwa" placeholder="Masukan Nomor" required>
+                      <div class="invalid-feedback">
+                        Harap Isi Nomor Dengan Benar
+                      </div>
+                    </div>
+  
+                    <div class="mb-4 selectoption">
+                      <label for="inputdomisili" class="form-label">Domisili</label>
+                      <select class="form-select selectpicker" aria-label="Default select example" id="inputdomisili" style="width: 100%;" required>
+                          <option selected disabled value="">Belum diisi</option>
+                          <option value="1">Bekasi</option>
+                          <option value="2">Jakarta Timur</option>
+                          <option value="3">Jakarta Pusat</option>
+                          <option value="4">Jakarta Barat</option>
+                          <option value="5">Depok</option>
+                        </select>
+
+                        <div class="invalid-feedback">
+                          Harap Isi Domisili Dengan Benar
+                        </div>
+                    </div>
+  
+                    <div class="mb-4">
+                      <label for="inputalamatlengkap" class="form-label">Alamat Lengkap</label>
+                      <textarea class="form-control" placeholder="Masukan alamat" id="inputalamatlengkap" style="height: 120px" required></textarea>
+                      <div class="invalid-feedback">
+                        Harap Isi Alamat Dengan Benar
+                      </div>
+                    </div>
+  
+                    <div class="mb-4">
+                      <label for="inputalergi" class="form-label">Alergi atau pantangan ( Jika tidak ada alergi tuliskan “-” )</label>
+                      <textarea class="form-control" placeholder="Masukan alergi" id="inputalergi" style="height: 120px" required></textarea>
+                      <div class="invalid-feedback">
+                        Harap Isi Alergi Dengan Benar
+                      </div>
+                    </div>
+  
+                    <div class="mb-4">
+                      <h3 class="judulwaktuberlangganan">Pilih Waktu berlangganan</h3>
+                      <div class="waktuberlangganan flex-container " data-toggle="validator">
+                          
+                        <div class="card">
+                          <input class="check radio" type="radio" name="pricing" id="card1" required checked> 
+                          <label for="card1">
+                              <h5>Makan Siang(5 Hari)</h5>
+                              <h2> <span>Rp,</span>250.000 </h2>
+                  </label>
+                        </div>
+      
+                        <div class="card">
+                          <input class="check" type="radio" name="pricing" id="card2" required> 
+                          <label for="card2">
+                              <h5>Makan Siang(10 Hari)</h5>
+                              <h2> <span>Rp,</span>480.000 </h2>
+                  </label>
+                        </div>
+      
+                        <div class="card ">
+                          <input class="check" type="radio" name="pricing" id="card3" required> 
+                          <label for="card3">
+                              <h5>Makan Siang(20 Hari)</h5>
+                              <h2> <span>Rp,</span>900.000 </h2>
+                  </label>
+                        </div>
+
+                        <div class="card">
+                          <input class="check radio" type="radio" name="pricing" id="card7" required> 
+                          <label for="card7">
+                              <h5>Makan Malam(5 Hari)</h5>
+                              <h2> <span>Rp,</span>250.000 </h2>
+                  </label>
+                        </div>
+      
+                        <div class="card">
+                          <input class="check" type="radio" name="pricing" id="card8" required> 
+                          <label for="card8">
+                              <h5>Makan Malam(10 Hari)</h5>
+                              <h2> <span>Rp,</span>480.000 </h2>
+                  </label>
+                        </div>
+      
+                        <div class="card ">
+                          <input class="check" type="radio" name="pricing" id="card9" required> 
+                          <label for="card9">
+                              <h5>Makan Malam(20 Hari)</h5>
+                              <h2> <span>Rp,</span>900.000 </h2>
+                  </label>
+                        </div>
+      
+                        <div class="card ">
+                          <input class="check" type="radio" name="pricing" id="card6" required> 
+                          <label for="card6">
+                              <h5>Makan Siang + Makan Malam(5 Hari)</h5>
+                              <h2> <span>Rp,</span>280.000 </h2>
+                  </label>
+                        </div>
+      
+                        <div class="card ">
+                          <input class="check" type="radio" name="pricing" id="card4" required> 
+                          <label for="card4">
+                              <h5>Makan Siang + Makan Malam(10 Hari)</h5>
+                              <h2> <span>Rp,</span>510.000 </h2>
+                  </label>
+                        </div>
+      
+                        <div class="card" required>
+                          <input class="check" type="radio" name="pricing" id="card5" required> 
+                          <label for="card5">
+                              <h5>Makan Siang + Makan Malam(20 Hari)</h5>
+                              <h2> <span>Rp,</span>930.000 </h2>
+                  </label>
+                  <div class="invalid-feedback">
+                    Harap Isi Email Dengan Benar
+                  </div>
+                        </div>
+                      </div>
+                    </div>
+
+              </div>
+              <div class="button-menusehat">
+                <button role="submit" class="btn-utama btn-menusehat selanjutnya">Selanjutnya</button>
+                <a href="detailmenu.html" role="button" class="btn-utama btn-menusehat kembali">Kembali</a>
+              </div>
+              
+              </form>
+             
+             
+          </div>
+      
+         
+
+          
+      </div>
+    </div>
+
+        <div class="footer">
+            <div class="container">
+              <ul class="list-group">
+                <li class="list-group-item company">Company  |  Recruit  |  Contact</li>
+                <li class="list-group-item">Alamat : Jl Tebet Dalam III no 13, Jakarta Selatan, 12810</li>
+                <li class="list-group-item">Email : doe@lezatsugihrasa.com</li>
+                <li class="list-group-item">Customer Service : 021 8300 262</li>
+                <li class="list-group-item">
+                  <div class="icon">
+                 <a href="https://www.instagram.com/sekayucatering/"><img src="img/iconinstragram.svg" alt="link instagram"></a>
+                  <a href="https://www.youtube.com/@sekayucateringjakarta"><img src="img/iconyoutube.svg" alt="link youtube"></a>
+                  <a href="https://www.linkedin.com/company/sekayucatering/?originalSubdomain=id"><img src="img/iconlinkeln.svg" alt="link linkedin"></a>
+                  <a href="https://www.tiktok.com/@sekayucatering?is_from_webapp=1&sender_device=pc"><img src="img/icontiktok.svg" alt="link tiktok"></a>
+                </div></li>
+                <hr>
+                <li class="list-group-item copyright">
+                  Copyright © 2023 Sekayu Catering
+                </li>
+              </ul>
+            </div>
+          </div>
+        
+   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="main.js"></script>
+        </body>
+</html>

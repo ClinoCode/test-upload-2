@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validasi Radio Button dengan Bootstrap 5</title>
+	<!-- Panggil CSS Bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+	<style>
+		.invalid-feedback {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="age">Usia:</label>
+		<input type="number" id="age" name="age" min="0" required>
+	
+		<label for="gender">Jenis Kelamin:</label><br>
+		<input type="radio" id="male" name="gender" value="Laki-Laki">
+		<label for="male">Laki-Laki</label><br>
+		<input type="radio" id="female" name="gender" value="Perempuan">
+		<label for="female">Perempuan</label><br>
+	
+		<label for="sport">Olahraga Favorit:</label>
+		<select id="sport" name="sport" required>
+			<option value="">Pilih Olahraga Favorit</option>
+			<option value="Sepak Bola">Sepak Bola</option>
+			<option value="Basket">Basket</option>
+			<option value="Bulutangkis">Bulutangkis</option>
+			<option value="Renang">Renang</option>
+		</select>
+	
+		<button type="button" id="showResult">Tampilkan Hasil</button>
+	</form>
+	
+	<p id="result"></p>
+	
+	<script>
+		const showResultButton = document.getElementById("showResult");
+		const resultElem = document.getElementById("result");
+	
+		showResultButton.addEventListener("click", function() {
+			const age = document.getElementById("age").value;
+			const gender = document.querySelector('input[name="gender"]:checked').value;
+			const sport = document.getElementById("sport").value;
+	
+			resultElem.textContent = `Usia: ${age} tahun, Jenis Kelamin: ${gender}, Olahraga Favorit: ${sport}`;
+		});
+	</script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

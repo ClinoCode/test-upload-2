@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Add Input on Button Click</title>
+  <!-- Tambahkan link ke file CSS Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <style>
+    .input-group {
+      margin-bottom: 10px;
+    }
+    .input-group label {
+      display: inline-block;
+      width: 100px;
+      text-align: right;
+      margin-right: 10px;
+    }
+    .input-group input {
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Add Input on Button Click</h1>
+    <button id="addInput" class="btn btn-primary">Add Input</button>
+    <form id="inputsForm">
+      <div class="input-group">
+        <label for="input1">Input 1:</label>
+        <input type="text" id="input1" name="input1" class="form-control">
+      </div>
+    </form>
+  </div>
+  <!-- Tambahkan link ke file JavaScript Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+  <script>
+  const addInputButton = document.querySelector('#addInput');
+const inputsForm = document.querySelector('#inputsForm');
+
+let inputCount = 1;
+
+addInputButton.addEventListener('click', () => {
+  if (inputCount < 7) {
+    inputCount++;
+    const newInputGroup = document.createElement('div');
+    newInputGroup.className = 'input-group';
+    newInputGroup.innerHTML = `
+      <label for="input${inputCount}">Input ${inputCount}:</label>
+      <input type="text" id="input${inputCount}" name="input${inputCount}">
+    `;
+    inputsForm.appendChild(newInputGroup);
+  }
+});
+
+  </script>
+</body>
+</html>
